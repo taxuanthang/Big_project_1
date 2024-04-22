@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4713132447551748878}
   - component: {fileID: 7634187050678427604}
   - component: {fileID: 5349900030850810873}
+  - component: {fileID: 7131687386559080056}
   m_Layer: 0
   m_Name: PF Props Crate Food
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,6 +160,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.23}
   m_EdgeRadius: 0
+--- !u!114 &7131687386559080056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880819276552276399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df886d0cd30c9504c8991bf1a2bfa58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Door: {fileID: 0}
 --- !u!1 &5987805596091755903
 GameObject:
   m_ObjectHideFlags: 0
