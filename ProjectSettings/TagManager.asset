@@ -9,6 +9,8 @@ TagManager:
   - Bear
   - Lake
   - Chest
+  - Door
+  - Board
   layers:
   - Default
   - TransparentFX
