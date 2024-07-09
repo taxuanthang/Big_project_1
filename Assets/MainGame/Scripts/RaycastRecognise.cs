@@ -17,36 +17,44 @@ public class RaycastRecognise : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bowl"))
         {
+            AudioManager.instance.PlaySFX("MeoSound");
             Bowl = collision.gameObject;
             Bowl.GetComponent<BowlControl>().Shine();
         }
         else if (collision.gameObject.CompareTag("Lake"))
         {
+            AudioManager.instance.PlaySFX("MeoSound");
             Lake = collision.gameObject;
             Lake.GetComponent<LakeControl>().Shine();
         }
         else if (collision.gameObject.CompareTag("Chest"))
         {
+            AudioManager.instance.PlaySFX("MeoSound");
             Chest = collision.gameObject;
             Chest.GetComponent<ChestControl>().Shine();
         }
         else if (collision.gameObject.CompareTag("Bear"))
         {
+            AudioManager.instance.PlaySFX("BearSound");
             Bear = collision.gameObject;
             Bear.GetComponent<BearControl>().Shine();
         }
         else if (collision.gameObject.CompareTag("Target"))
         {
+            AudioManager.instance.PlaySFX("MeoSound");
             Crate = collision.gameObject;
             Crate.GetComponent<CrateControl>().Shine();
         }
         else if (collision.gameObject.CompareTag("Board"))
         {
+            AudioManager.instance.PlaySFX("MeoSound");
             Board = collision.gameObject;
             Board.GetComponent<Board>().Shine();
         }
         else if (collision.gameObject.CompareTag("Door")&& TopDownCharacterController.isFinished)
         {
+            AudioManager.instance.musicSource.Stop();
+            AudioManager.instance.PlaySFX("WinningSound");
             SceneManager.LoadScene("EndScene");
         }
     }
