@@ -142,8 +142,5 @@ public class FishingMiniGame : MonoBehaviour
 
     }
 
-
-
-
 }
 

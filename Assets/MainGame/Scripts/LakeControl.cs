@@ -56,7 +56,7 @@ public class LakeControl : MonoBehaviour
             Debug.Log("Fishing");
             if (FishingRod != null)
             {
-                SceneManager.LoadScene("Minigame", LoadSceneMode.Additive);
+                Navigation.instance.NavigationMiniGameScene();
             }
         }
         if (isFished)

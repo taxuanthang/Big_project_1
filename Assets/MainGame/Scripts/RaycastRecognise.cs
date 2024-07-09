@@ -55,7 +55,7 @@ public class RaycastRecognise : MonoBehaviour
         {
             AudioManager.instance.musicSource.Stop();
             AudioManager.instance.PlaySFX("WinningSound");
-            SceneManager.LoadScene("EndScene");
+            Navigation.instance.NavigationEndScene();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

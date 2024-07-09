@@ -42,6 +42,6 @@ public class UIController : MonoBehaviour
     public void Exit2Menu()
     {
         AudioManager.instance.musicSource.Stop();
-        SceneManager.LoadScene("StartScene");
+        Navigation.instance.NavigationMainScene();
     }
 }

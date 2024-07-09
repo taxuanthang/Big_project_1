@@ -7,14 +7,6 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Message[] messages;
     public Actor[] actors;
-    IEnumerator DelayAction(float delayTime)
-    {
-        //Wait for the specified delay time before continuing.
-        yield return new WaitForSeconds(delayTime);
-
-        //Do the action after the delay time has finished.
-    }
-
     public void StartDialouge()
     {
  /*       Debug.Log("xin chao");*/
